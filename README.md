@@ -26,17 +26,17 @@ All filenames match the old pages, so Google rankings and existing links keep wo
 | `digital-marketing-thank-you.html` | Shown after the demo form is sent |
 | `send-demo.php` | Emails each free-demo request |
 
-These old duplicate URLs now forward to the right page: `seo-training-institute-mumbai.html`, `social-media-marketing-smo-courses.html`, `seo-course-mumbai-course-content.html`, and `digital/index.html`.
+These old duplicate URLs now forward to the right page: `seo-training-institute-mumbai.html` and `social-media-marketing-smo-courses.html`.
+
+`compufield.com/digital` is not touched: it already forwards to `digital_marketing_course_mumbai.html`, which is the new main page.
 
 ## Uploading to compufield.com
 
-Upload everything to the **website root** (the same folder as `index.html`), replacing the old files:
+Upload everything in the ZIP to the **website root** (the same folder as `index.html`). There are no subfolders and no `.htaccess` file, so nothing else on the server is touched:
 
-- all `.html` files
-- `send-demo.php`
-- the `assets/` folder
-- the `_leads/` folder (keeps a private backup of form requests)
-- `digital/index.html` (replaces the current `/digital` redirect)
+- all `.html` files (replace the old ones)
+- `send-demo.php` (new)
+- `compufield-dm.css` and `compufield-dm.js` (new; unique names so they can't clash with other files)
 
 You don't need to upload `_build/` or `README.md`.
 
@@ -46,14 +46,14 @@ Images are loaded from the folders already on compufield.com (`marketing-resourc
 
 - Every request is emailed to **compufield@gmail.com** and **fkhairaz@gmail.com** using PHP's built-in `mail()`.
 - Each email includes a one-tap WhatsApp link to reply to the student.
-- A copy of each request is also saved in `_leads/demo-leads.csv`. The `.htaccess` file there blocks public access on Apache hosting.
+- A copy of each request is also saved in `demo-leads-backup.php` in the website root, created automatically on the first request. Opening it in a browser shows "not found"; to read it, download it from cPanel File Manager or FTP and open it in Excel (it is CSV after the first line).
 - Spam protection uses a hidden trap field and a minimum time on the form. No captcha or outside service is involved.
 
 **After uploading, send one test request.** If the email doesn't arrive (check Spam too):
 
 1. Make sure the hosting supports PHP `mail()`. Most cPanel hosting does.
 2. In `send-demo.php`, set `$FROM` to a real mailbox on your domain (for example `website@compufield.com`), then ask your host to confirm SPF is set up for compufield.com. This keeps Gmail from marking the leads as spam.
-3. Even if email fails, requests are still saved in `_leads/demo-leads.csv`, so no lead is lost.
+3. Even if email fails, requests are still saved in `demo-leads-backup.php`, so no lead is lost.
 
 To change who receives leads, edit `$TO` at the top of `send-demo.php`.
 
@@ -65,7 +65,7 @@ All text, fees, phone numbers, modules, and FAQs live in **`_build/content.py`**
 python3 _build/build.py
 ```
 
-Every page is regenerated, so a number changed once is changed everywhere. Design changes go in `assets/css/site.css`.
+Every page is regenerated, so a number changed once is changed everywhere. Design changes go in `compufield-dm.css`.
 
 ## Contact details used on every page
 

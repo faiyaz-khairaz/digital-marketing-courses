@@ -492,7 +492,6 @@ COURSES = [
 REDIRECTS = {
     "seo-training-institute-mumbai.html": "seo-courses-in-mumbai.html",
     "social-media-marketing-smo-courses.html": "social-media-marketing-courses-in-mumbai.html",
-    "digital/index.html": "../digital_marketing_course_mumbai.html",
 }
 
 # ---------------------------------------------------------------------------

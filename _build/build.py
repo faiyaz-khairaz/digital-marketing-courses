@@ -112,7 +112,7 @@ def head(title, description, file, schema=None, noindex=False, lead=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v={ASSET_V}">
+<link rel="stylesheet" href="compufield-dm.css?v={ASSET_V}">
 {tracking(lead)}{ld}
 </head>
 """
@@ -197,7 +197,7 @@ def footer():
   </div>
 </footer>
 <a class="wa-float" href="{wa('Hi Compufield, I would like to book a free demo class for digital marketing.')}" aria-label="Chat with Compufield on WhatsApp">{WA_ICON}<span>WhatsApp us</span></a>
-<script src="assets/js/site.js?v={ASSET_V}" defer></script>
+<script src="compufield-dm.js?v={ASSET_V}" defer></script>
 </body>
 </html>
 """
@@ -862,9 +862,6 @@ def build():
     page_thanks()
     for s, d in C.REDIRECTS.items():
         page_redirect(s, d)
-    write("_leads/.htaccess", "# Keep saved demo leads private\nRequire all denied\n<IfModule !mod_authz_core.c>\n  Order allow,deny\n  Deny from all\n</IfModule>\n")
-    write("_leads/index.html", "")
-    write("_build/.htaccess", "Require all denied\n<IfModule !mod_authz_core.c>\n  Order allow,deny\n  Deny from all\n</IfModule>\n")
 
 
 if __name__ == "__main__":

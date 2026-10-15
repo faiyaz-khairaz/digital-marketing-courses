@@ -15,7 +15,8 @@ $TO        = 'compufield@gmail.com, fkhairaz@gmail.com';
 $FROM      = 'Compufield Website <noreply@compufield.com>'; // use an address on your own domain
 $THANK_YOU = 'digital-marketing-thank-you.html';
 $FALLBACK  = 'digital_marketing_course_mumbai.html';
-$SAVE_COPY = true;   // also keep a copy of each request in _leads/demo-leads.csv (safety net if an email goes missing)
+$SAVE_COPY = true;   // also keep a copy of each request in demo-leads-backup.php (safety net if an email goes missing)
+$BACKUP    = __DIR__ . '/demo-leads-backup.php';   // created automatically; opening it in a browser shows a blank page
 
 $CENTRES = array('Kemps Corner (classroom)', 'Bandra West (classroom)', 'Live online');
 $BATCHES = array('Weekday', 'Weekend', 'Fast-track', 'Not sure yet');
@@ -125,18 +126,20 @@ $sent = @mail($TO, $subject, $body, implode("\r\n", $headers));
 // ---------------------------------------------------------------------------
 $saved = false;
 if ($SAVE_COPY) {
-    $dir = __DIR__ . '/_leads';
-    if (!is_dir($dir)) { @mkdir($dir, 0750, true); }
-    if (is_dir($dir)) {
-        $file = $dir . '/demo-leads.csv';
-        $new  = !is_file($file);
-        $fh   = @fopen($file, 'a');
-        if ($fh) {
-            if ($new) { fputcsv($fh, array('Received', 'Name', 'Mobile', 'Email', 'Course', 'Centre', 'Batch', 'Page', 'Emailed')); }
-            fputcsv($fh, array($when, $name, $phone, $email, $course, $centre, $batch, $page, $sent ? 'yes' : 'NO'));
-            fclose($fh);
-            $saved = true;
+    // The first line stops PHP, so anyone opening this file in a browser sees a blank page.
+    // Download it from cPanel File Manager / FTP to read it (it is plain CSV after line 1).
+    $new = !is_file($BACKUP);
+    $fh  = @fopen($BACKUP, 'a');
+    if ($fh) {
+        if ($new) {
+            fwrite($fh, "<?php http_response_code(404); exit; ?>\n");
+            fputcsv($fh, array('Received', 'Name', 'Mobile', 'Email', 'Course', 'Centre', 'Batch', 'Page', 'Emailed'));
         }
+        $row = array($when, $name, $phone, $email, $course, $centre, $batch, $page, $sent ? 'yes' : 'NO');
+        $row = str_replace(array('<?', '?>', '<%', '%>'), '', $row);
+        fputcsv($fh, $row);
+        fclose($fh);
+        $saved = true;
     }
 }
 
