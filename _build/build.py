@@ -80,6 +80,10 @@ def tracking(lead=False):
 
 
 def head(title, description, file, schema=None, noindex=False, lead=False):
+    seo = getattr(C, "SEO", {}).get(file, {})
+    title = seo.get("title", title)
+    description = seo.get("description", description)
+    keywords = seo.get("keywords", "")
     canonical = f"{C.SITE}/{file}"
     robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="index, follow, max-image-preview:large">'
     ld = ""
@@ -92,6 +96,7 @@ def head(title, description, file, schema=None, noindex=False, lead=False):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
+{f'<meta name="keywords" content="{e(keywords)}">' if keywords else ''}
 <link rel="canonical" href="{canonical}">
 {robots}
 <meta name="theme-color" content="#15244b">
@@ -429,7 +434,7 @@ def page_hub():
       <div class="searchbox" role="presentation">{SEARCH_ICON}<span class="q" data-q="best digital marketing course in mumbai with ai">best digital marketing course in mumbai with ai</span></div>
       <div class="result">
         <div class="result-meta"><img src="{img('images/education/header-logo.png')}" alt=""><span><b>Compufield Computer Institute</b><i>compufield.com › digital</i></span></div>
-        <h1>Advanced Diploma in Digital Marketing with AI, Mumbai</h1>
+        <h1>Advanced digital marketing course in Mumbai with AI, updated for 2026</h1>
         <p class="result-rating"><span class="stars" aria-hidden="true">★★★★★</span> Rated {C.RATING} from {C.REVIEWS} Google reviews. Training since 1985.</p>
         <p class="result-desc">21 practical modules, from SEO and Google Ads to Meta Ads, GA4 and WhatsApp marketing, with ChatGPT, Gemini and Canva AI used in every one. Job-ready in about 3 months with live projects, Google certifications and internship support. Classroom batches at Kemps Corner and Bandra West, or live online.</p>
         <ul class="sitelinks">{sl}</ul>
@@ -641,7 +646,7 @@ def page_fees():
 <section class="course-hero">
   <div class="wrap">
     <div>
-      <h1>Digital marketing course fees, 2026</h1>
+      <h1>Digital marketing with AI (2026): course fees & syllabus</h1>
       <p class="lede">One clear price for each programme. All programmes are available in the classroom at Kemps Corner or Bandra West, or as live online classes, at the same fee.</p>
       <dl class="facts">
         <dt>Diploma</dt><dd><span class="price">₹30,000</span> for the Advanced Diploma in Digital Marketing with AI</dd>
@@ -716,7 +721,7 @@ def page_contact():
 <section class="course-hero">
   <div class="wrap">
     <div>
-      <h1>Visit us at Kemps Corner or Bandra West, or learn online</h1>
+      <h1>Digital marketing institute at Bandra West and Kemps Corner, Mumbai, or learn online</h1>
       <p class="lede">Two classroom centres in Mumbai, and live online classes for students anywhere. The fastest way to reach us is WhatsApp.</p>
       <div class="btn-row">
         <a class="btn btn--wa" href="{wa('Hi Compufield, I would like to book a free demo class for digital marketing.')}">{WA_ICON}WhatsApp {C.WHATSAPP_SHOW}</a>
@@ -753,7 +758,7 @@ def page_reviews():
 <section class="course-hero">
   <div class="wrap">
     <div>
-      <h1>Reviews, certificates and classroom photos</h1>
+      <h1>Digital marketing Google certification training: reviews, certificates and photos</h1>
       <p class="lede">Rated {C.RATING} from {C.REVIEWS} reviews on Google. Here is what our digital marketing students say, the Google certificates they've earned, and what our classes look like.</p>
     </div>
     {demo_form(C.COURSE_OPTIONS[0])}
@@ -776,14 +781,14 @@ def page_reviews():
 
 <section class="section" id="certificates">
   <div class="wrap">
-    <div class="section-head"><h2>Google certificates earned by our students</h2><p>We prepare every student for Google's free Skillshop certifications.</p></div>
+    <div class="section-head"><h2>Get Google Ads certification at Compufield Mumbai</h2><p>Certificates earned by our students. We prepare every student for Google's free Skillshop certifications.</p></div>
     {gallery_block(C.CERT_IMAGES, certs=True)}
   </div>
 </section>
 
 <section class="section section--white" id="batch-images">
   <div class="wrap">
-    <div class="section-head"><h2>Inside our classes</h2></div>
+    <div class="section-head"><h2>Digital marketing training images</h2></div>
     {gallery_block(C.CLASS_IMAGES)}
   </div>
 </section>

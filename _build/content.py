@@ -234,7 +234,7 @@ COURSES = [
         "option": "SEO with AI Search Optimisation",
         "title": "SEO Course in Mumbai with AI Search (GEO) 2026 | Compufield",
         "description": "SEO course in Mumbai and online: keyword research, on-page, technical and local SEO, plus AI search optimisation for Google AI Overviews and ChatGPT. ₹12,000, Kemps Corner & Bandra West.",
-        "h1": "SEO course in Mumbai, with AI search optimisation",
+        "h1": "Search Engine Optimization (SEO) course in Mumbai, with AI tools & certification",
         "intro": "Learn how to rank a website on Google and how to get it cited in Google AI Overviews, ChatGPT and Perplexity. You work on a real website through the course, from keyword research to reporting.",
         "facts": [("Duration", "2 to 3 weeks, about 20 hours"), ("Fee", "<span class=\"price\">₹12,000</span> (AI SEO module included)"), ("Batches", "Weekday, weekend or fast-track"), ("Where", "Kemps Corner, Bandra West, or live online"), ("Certificate", "Compufield SEO certificate")],
         "who": [("Business owners", "with a website that should bring more enquiries"), ("Bloggers and YouTubers", "who want steady search traffic"), ("Web designers and developers", "who want to build SEO-ready sites"), ("Marketing students", "adding a skill employers ask for"), ("Working professionals", "moving into SEO or adding AI to their SEO work")],
@@ -264,7 +264,7 @@ COURSES = [
         "option": "Social Media Marketing",
         "title": "Social Media Marketing Course in Mumbai with AI 2026 | Compufield",
         "description": "Social media marketing course in Mumbai and online: Instagram, Facebook and Meta Ads, LinkedIn, YouTube, WhatsApp and AI content creation. ₹12,000, Kemps Corner & Bandra West.",
-        "h1": "Social media marketing course in Mumbai, with AI content tools",
+        "h1": "Social media marketing course in Mumbai with certification & AI tools",
         "intro": "Plan content, grow pages and run paid campaigns on Instagram, Facebook, LinkedIn and YouTube. You'll use AI to write captions, script Reels and design posts in a fraction of the time.",
         "facts": [("Duration", "About 20 sessions, 2 to 3 weeks"), ("Fee", "<span class=\"price\">₹12,000</span> (AI content module included)"), ("Batches", "Weekday, weekend or fast-track"), ("Where", "Kemps Corner, Bandra West, or live online"), ("Certificate", "Compufield certificate, plus YouTube certification guidance")],
         "who": [("Business owners", "who want to sell and get enquiries on social media"), ("Bloggers, creators and YouTubers", "growing a following"), ("Students and freshers", "aiming for social media executive roles"), ("Freelancers", "managing pages for clients"), ("Marketing teams", "who need paid social skills")],
@@ -295,7 +295,7 @@ COURSES = [
         "option": "Google Ads & Analytics",
         "title": "Google Ads & Analytics Course in Mumbai (AI-Powered) 2026 | Compufield",
         "description": "Google Ads (AdWords) and Analytics training in Mumbai and online: Search, Performance Max, Display, YouTube, Shopping, Smart Bidding, GA4 and Google certification prep. ₹11,000.",
-        "h1": "Google Ads & Analytics course in Mumbai",
+        "h1": "Google Ads (AdWords) & Analytics training in Mumbai",
         "intro": "Learn to run Google Ads that bring enquiries and sales, not just clicks, and to prove the results in Google Analytics 4. Covers Search, Performance Max, Display, YouTube and Shopping, with Google's AI features.",
         "facts": [("Duration", "About 20 sessions, 2 to 3 weeks"), ("Fee", "<span class=\"price\">₹11,000</span>"), ("Batches", "Weekday, weekend or fast-track"), ("Where", "Kemps Corner, Bandra West, or live online"), ("Certificate", "Compufield certificate, plus Google Ads certification prep")],
         "who": [("Marketing professionals", "who manage ad budgets"), ("MBA and BMS students", "heading into performance marketing"), ("Business owners", "who want leads from Google"), ("Agency staff", "who run campaigns for clients"), ("Freelancers", "offering PPC services")],
@@ -328,7 +328,7 @@ COURSES = [
         "option": "Google Analytics 4 (GA4)",
         "title": "Google Analytics 4 (GA4) Course in Mumbai | Compufield",
         "description": "Google Analytics 4 course in Mumbai and online: GA4 setup, events, key events, Google Tag Manager, Explorations, attribution and Looker Studio dashboards. Google Analytics certification prep.",
-        "h1": "Google Analytics 4 (GA4) course in Mumbai",
+        "h1": "Google Analytics (GA4) training in Mumbai",
         "intro": "Set up GA4 correctly, track the actions that matter, and turn the numbers into reports your manager or client understands. Includes Google Tag Manager and Looker Studio.",
         "facts": [("Format", "Short course, or as a module of the Advanced Diploma"), ("Fee", "Ask us on WhatsApp for the standalone fee"), ("Batches", "Weekday, weekend or fast-track"), ("Where", "Kemps Corner, Bandra West, or live online"), ("Certificate", "Compufield certificate, plus Google Analytics certification prep")],
         "who": [("Digital marketers", "who need to prove results"), ("Website owners", "who want to know what visitors do"), ("Performance marketers", "tracking ads and conversions"), ("MIS and data professionals", "moving into marketing analytics"), ("Students", "preparing for the Google Analytics certification")],
@@ -418,7 +418,7 @@ COURSES = [
         "option": "Email Marketing",
         "title": "Email Marketing Course in Mumbai | Automation & Deliverability | Compufield",
         "description": "Email marketing course in Mumbai and online: list building, sign-up forms, templates, segmentation, automation, deliverability (SPF, DKIM, DMARC), reports and AI subject lines.",
-        "h1": "Email marketing course in Mumbai",
+        "h1": "Professional email marketing training in Mumbai",
         "intro": "Build an email list, write emails people open, and set up automated sequences that keep selling while you sleep. Includes the deliverability rules that keep your emails out of spam.",
         "facts": [("Format", "Short course, or as a module of the Advanced Diploma"), ("Fee", "Ask us on WhatsApp for the standalone fee"), ("Batches", "Weekday, weekend or fast-track"), ("Where", "Kemps Corner, Bandra West, or live online"), ("Certificate", "Compufield certificate")],
         "who": [("Business owners", "who want repeat customers"), ("Digital marketers", "running newsletters"), ("E-commerce sellers", "recovering abandoned carts"), ("Coaches and trainers", "nurturing leads"), ("Students", "adding a high-ROI skill")],
@@ -446,7 +446,7 @@ COURSES = [
         "option": "Online Reputation Management",
         "title": "Online Reputation Management (ORM) Course in Mumbai | Compufield",
         "description": "Online reputation management (ORM) course in Mumbai and online: monitoring mentions, handling criticism, Google reviews, negative search results and crisis response, with AI tools.",
-        "h1": "Online reputation management (ORM) course",
+        "h1": "Online reputation management (ORM) training in Mumbai",
         "intro": "Learn how to monitor what people say about a brand, respond to criticism well, grow positive reviews, and push down a negative search result the right way.",
         "facts": [("Format", "Short course, or as a module of the Advanced Diploma"), ("Fee", "Ask us on WhatsApp for the standalone fee"), ("Batches", "Weekday, weekend or fast-track"), ("Where", "Kemps Corner, Bandra West, or live online"), ("Certificate", "Compufield certificate")],
         "who": [("Business owners", "doctors, restaurants, retailers and service firms"), ("PR and marketing teams", "handling brand image"), ("Social media executives", "managing comments and reviews"), ("Agency staff", "offering ORM services"), ("Professionals", "managing their personal brand")],
@@ -473,7 +473,7 @@ COURSES = [
         "option": "Digital Marketing for Marketing Students",
         "title": "Digital Marketing Course for MBA, BBA & BMS Students in Mumbai | Compufield",
         "description": "Digital marketing course for marketing students (MBA, BBA, BMS) in Mumbai and online: 21 modules, AI tools, live projects, Google certifications, internship and interview preparation.",
-        "h1": "Digital marketing course for MBA, BBA & BMS students",
+        "h1": "Digital marketing course for marketing students (MBA, BBA & BMS)",
         "intro": "Your degree teaches marketing theory. This course gives you the hands-on skills recruiters test for: SEO, Google Ads, Meta Ads, GA4 and AI tools, with live projects and certifications on your CV before you graduate.",
         "facts": [("Duration", "60 sessions, about 3 months, around your college timetable"), ("Fee", "<span class=\"price\">₹30,000</span> (Advanced Diploma)"), ("Batches", "Weekday, weekend or fast-track"), ("Where", "Kemps Corner, Bandra West, or live online"), ("Extras", "Live projects, internship support, interview preparation")],
         "who": [("MBA students", "specialising in marketing"), ("BBA and BMS students", "planning a marketing career"), ("BMM and mass media students", "moving into digital"), ("Final-year students", "preparing for placements"), ("Fresh graduates", "who want to be job-ready")],
@@ -492,6 +492,77 @@ COURSES = [
 REDIRECTS = {
     "seo-training-institute-mumbai.html": "seo-courses-in-mumbai.html",
     "social-media-marketing-smo-courses.html": "social-media-marketing-courses-in-mumbai.html",
-    "seo-course-mumbai-course-content.html": "seo-courses-in-mumbai.html",
     "digital/index.html": "../digital_marketing_course_mumbai.html",
+}
+
+# ---------------------------------------------------------------------------
+# On-page SEO carried over from the OLD live pages (checked 15 Oct 2026).
+# Titles, descriptions and keywords are kept as they were, except where the
+# old text named Andheri/Thane or was keyword-stuffed.
+# ---------------------------------------------------------------------------
+_KW_DM = "Digital Marketing, SEO, SMO, Mumbai, Search Engine Optimization, Social Media Marketing"
+SEO = {
+    "digital_marketing_course_mumbai.html": {
+        "title": "Adv. Digital Marketing Course in Mumbai with AI & Certification 2026",
+        "description": "Advance your career with Mumbai’s best digital marketing course. Learn AI tools, SEO, PPC & get certified in 2026. Practical training at Kemps Corner, Bandra West & live online.",
+        "keywords": "Digital Marketing, SEO, SMO, Mumbai, Search Engine Optimization, Social Media Marketing, Kemps Corner, Bandra West, Near station, best, institute, courses, training, internet marketing, learn, ppc, facebook marketing, promote, businesses, generate, sales, Social media optimisation, grant road, mehboob studio, individual based training, practical course, digital marketing course with AI, online digital marketing course",
+    },
+    "seo-courses-in-mumbai.html": {
+        "title": "SEO Course in Mumbai – AI Tools, Certification & 2026 Syllabus",
+        "description": "Master SEO with our advanced SEO Course in Mumbai. Learn 2026 syllabus, AI tools, strategies & get certified. Practical training with expert faculty.",
+        "keywords": _KW_DM + ", SEO course in Mumbai, AI SEO, GEO, local SEO",
+    },
+    "social-media-marketing-courses-in-mumbai.html": {
+        "title": "Social Media Marketing Course in Mumbai | SMM Training with AI",
+        "description": "Master Facebook, Instagram, LinkedIn, and YouTube marketing in Mumbai. Learn SMM strategies, ad campaigns, and AI tools for content with Compufield. Enroll now!",
+        "keywords": _KW_DM + ", SMM course, Instagram marketing, Facebook ads, Meta ads",
+    },
+    "adwords-training-analytics-training-mumbai.html": {
+        "title": "Google AdWords & Analytics Training in Mumbai | AI-Driven",
+        "description": "Learn Google Ads (AdWords) and Analytics in Mumbai with AI-enhanced PPC training at Compufield. Master campaign setup, optimization, analytics & real-world advertising skills.",
+        "keywords": "Google Ads, AdWords, PPC, Google Analytics, Digital Marketing, SEO, SMO, Search Engine Optimization, Social Media Marketing, Mumbai",
+    },
+    "google-analytics-course.html": {
+        "title": "Google Analytics Course in Mumbai | Analytics Training & Certification",
+        "description": "Learn Google Analytics (GA4) in Mumbai. Hands-on training in measurement, data insights, dashboards, conversion tracking and reporting for digital success.",
+        "keywords": _KW_DM + ", Google Analytics, GA4, Google Tag Manager",
+    },
+    "wordpress-course-in-mumbai.html": {
+        "title": "WordPress Training | WordPress Course in Mumbai - Compufield",
+        "description": "Looking for a WordPress training program in Mumbai? Compufield offers WordPress classes at Kemps Corner and Bandra West, and live online. Contact us to book a free demo.",
+        "keywords": "WordPress, WordPress course, WordPress training, Digital Marketing, SEO, SMO, Search Engine Optimization, Social Media Marketing, Mumbai",
+    },
+    "email-marketing-course.html": {
+        "title": "Email Marketing Course in Mumbai | Learn Digital Email Campaigns",
+        "description": "Learn professional Email Marketing in Mumbai with Compufield. Master campaign strategy, automation, analytics & tools for career growth and business results.",
+        "keywords": _KW_DM + ", email marketing",
+    },
+    "online-reputation-management-training.html": {
+        "title": "Online Reputation Management Training in Mumbai | ORM Course",
+        "description": "Upgrade your digital skills with an Online Reputation Management training in Mumbai. Practical ORM techniques, analytics and AI tools for brands and professionals.",
+        "keywords": _KW_DM + ", online reputation management, ORM",
+    },
+    "digital-marketing-course-for-marketing-students.html": {
+        "title": "Digital Marketing Training for Students in Mumbai | Compufield",
+        "description": "Join Compufield’s Digital Marketing training for marketing students in Mumbai. Gain hands-on skills in SEO, content marketing, analytics and campaign strategy.",
+        "keywords": "digital marketing course for students, MBA, BBA, BMS, " + _KW_DM,
+    },
+    "digital-marketing-course-fee.html": {
+        "title": "Digital Marketing Course Fee & Syllabus in Mumbai | Compufield",
+        "description": "Explore Digital Marketing course fee, syllabus & internship details in Mumbai at Compufield. Learn SEO, PPC, analytics, social media & real-world skills.",
+        "keywords": "Best Digital Marketing Training Institute, digital marketing course fee, Mumbai",
+    },
+    "digital-marketing-institute-near-me.html": {
+        "title": "Best Digital Marketing Institute in Mumbai | Compufield Institute",
+        "description": "Find the best Digital Marketing institute near you in Mumbai at Compufield. Practical training in SEO, social media, Google Ads, analytics, email marketing & more.",
+        "keywords": "Digital Marketing institute near me, Kemps Corner, Bandra West, Mumbai",
+    },
+    "digital-marketing-google-certification.html": {
+        "title": "Digital Marketing Google Certification Training in Mumbai | Compufield",
+        "description": "Get Google Digital Marketing certification training in Mumbai at Compufield. Learn SEO, Google Ads, analytics, social media & earn industry-recognized credentials.",
+        "keywords": "Digital Marketing Courses in Mumbai, Social Media Marketing Courses in Mumbai, Social Media Courses in Mumbai, SMO Courses, SMM Courses, Google Ads certification",
+    },
+    "ai-tools-for-digital-marketing.html": {
+        "keywords": "AI tools for digital marketing, ChatGPT for marketing, AI marketing course, Mumbai",
+    },
 }
